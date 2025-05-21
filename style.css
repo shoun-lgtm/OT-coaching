@@ -762,3 +762,44 @@ footer {
         padding: 30px 20px;
     }
 }
+/* アニメーションの修正 */
+[data-animation="fade-in"],
+.animated-title,
+.animated-subtitle,
+.cta-button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+[data-animation="fade-in"].visible,
+.animated-title.visible,
+.animated-subtitle.visible,
+.cta-button.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* アニメーション順序の調整 */
+.animated-title {
+    transition-delay: 0.3s;
+}
+
+.animated-subtitle {
+    transition-delay: 0.6s;
+}
+
+.cta-button {
+    transition-delay: 0.9s;
+}
+
+/* 追加のアニメーション */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
