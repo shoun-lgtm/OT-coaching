@@ -3,473 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIND SHIFT | 作業療法士によるキャリアコーチング</title>
-    <meta name="description" content="作業療法士の専門知識を活かしたキャリアコーチングで、あなたの可能性を最大限に引き出します。習慣形成・メンタルケア・キャリア戦略をサポート。">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
+    <title>作業療法士によるコーチングサービス - 安田翔雲</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-    
-    <!-- ローディングアニメーション -->
-    <div class="loading-screen">
-        <div class="loading-animation">
-            <span class="loading-text">MIND SHIFT</span>
-            <div class="loading-bar"></div>
-        </div>
-    </div>
-
-    <!-- ヘッダー部分 -->
     <header>
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">MIND<span>SHIFT</span></a>
-            </div>
-            <nav class="desktop-nav">
+        <nav>
+            <div class="logo">OT Coaching</div>
+            <div class="nav-links" id="navLinks">
                 <ul>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#approach" class="nav-link">Approach</a></li>
-                    <li><a href="#testimonials" class="nav-link">Voices</a></li>
-                    <li><a href="#contact" class="nav-link contact-btn">Contact</a></li>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#services">サービス</a></li>
+                    <li><a href="#about">特徴</a></li>
+                    <li><a href="#profile">プロフィール</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
-            </nav>
-            <div class="menu-toggle">
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </div>
-        </div>
+            <div class="menu-toggle" id="menuToggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
     </header>
-    
-    <!-- モバイルナビゲーション -->
-    <div class="mobile-nav">
-        <div class="mobile-nav-container">
-            <ul>
-                <li><a href="#about" class="mobile-nav-link">About</a></li>
-                <li><a href="#services" class="mobile-nav-link">Services</a></li>
-                <li><a href="#approach" class="mobile-nav-link">Approach</a></li>
-                <li><a href="#testimonials" class="mobile-nav-link">Voices</a></li>
-                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-            </ul>
-            <div class="mobile-contact">
-                <p>メール: info@mindshift.jp</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- ヒーローセクション -->
-    <section class="hero">
+    <section id="home" class="hero-section parallax-section">
         <div class="hero-content">
-            <h1 class="reveal-text">人生の<span>シフトチェンジ</span>を<br>サポートする</h1>
-            <p class="subtitle reveal-text">作業療法士の専門知識を活かした<br>キャリアコーチング</p>
-            <a href="#contact" class="cta-button reveal-element">無料カウンセリングを予約する</a>
+            <h1 class="animated-title">あなたの可能性を解き放つ</h1>
+            <h2 class="animated-subtitle">作業療法の視点から生まれた革新的コーチング</h2>
+            <p>科学的根拠と作業療法の専門知識を活かし、あなたの潜在能力を最大限に引き出すコーチングサービスを提供します。メンタルヘルスと日常習慣の改善を通して、理想の自分へと導きます。</p>
+            <a href="#contact" class="cta-button animated-button">無料相談はこちら</a>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-arrow"></div>
-        </div>
-        <div class="hero-bg"></div>
     </section>
 
-    <!-- アバウトセクション -->
-    <section id="about" class="about">
+    <section id="about" class="about-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag reveal-element">ABOUT</span>
-                <h2 class="reveal-text">なぜ作業療法士の<br>コーチングなのか</h2>
+            <h2 data-animation="fade-in">作業療法×コーチングの力</h2>
+            <div class="features">
+                <div class="feature-card" data-animation="fade-in">
+                    <div class="feature-icon">🧠</div>
+                    <h3>作業療法の視点</h3>
+                    <p>日常生活の具体的な活動を通して内面の変化を促進します。「その人らしさ」を大切にした支援を行います。</p>
+                </div>
+                <div class="feature-card" data-animation="fade-in">
+                    <div class="feature-icon">🔬</div>
+                    <h3>科学的アプローチ</h3>
+                    <p>エビデンスに基づいた効果的な介入方法で、確実な成果を目指します。最新の研究成果を取り入れています。</p>
+                </div>
+                <div class="feature-card" data-animation="fade-in">
+                    <div class="feature-icon">🔄</div>
+                    <h3>メンタル×習慣の統合サポート</h3>
+                    <p>心理面と行動面の両方からアプローチし、持続的な変化を実現します。</p>
+                </div>
+                <div class="feature-card" data-animation="fade-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3>個別最適化プログラム</h3>
+                    <p>あなただけの成長プロセスをデザインし、最短距離でゴールへと導きます。</p>
+                </div>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="reveal-element">作業療法士は<span class="highlight">「その人らしい生活」</span>を専門的に支援するプロフェッショナルです。私たちは医学的知識と心理学的アプローチを組み合わせ、クライアントの可能性を最大限に引き出します。</p>
-                    <p class="reveal-element">MIND SHIFTでは、10年以上の臨床経験で培った<span class="highlight">「習慣形成」「行動変容」「環境調整」</span>の専門知識を活かし、あなたのキャリアと人生の変革をサポートします。</p>
-                    <div class="stats-container reveal-element">
-                        <div class="stat">
-                            <span class="stat-number" data-count="87">0</span><span class="stat-symbol">%</span>
-                            <p>クライアント満足度</p>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-count="120">0</span><span class="stat-symbol">+</span>
-                            <p>コーチング実績</p>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-count="10">0</span><span class="stat-symbol">年</span>
-                            <p>作業療法士経験</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image reveal-element">
-                    <div class="image-container">
-                        <img src="https://source.unsplash.com/random/600x800/?therapist" alt="コーチプロフィール">
-                    </div>
-                </div>
+            
+            <div class="about-content" data-animation="fade-in">
+                <h3>作業療法×コーチングの独自性</h3>
+                <p>作業療法は「その人らしい生活」を支援する専門分野です。私たちのコーチングでは、心理学の知見だけでなく、実生活での「作業」を通じた変化に焦点を当てます。思考パターンの変革と日常習慣の再構築を同時に進めることで、持続可能な成長を実現します。</p>
             </div>
         </div>
     </section>
 
-    <!-- サービスセクション -->
-    <section id="services" class="services">
+    <section id="services" class="services-section parallax-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag reveal-element">SERVICES</span>
-                <h2 class="reveal-text">あなたに合わせた<br>コーチングプログラム</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card reveal-element">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>メンタルシフトプログラム</h3>
-                    <p>自己制限的な思考パターンを書き換え、成長マインドセットを育成します。作業療法の認知行動アプローチを応用し、思考の柔軟性を高めます。</p>
-                    <div class="service-features">
-                        <span>週1回のセッション</span>
-                        <span>行動記録シート</span>
-                        <span>メンタルトレーニング</span>
-                    </div>
-                    <a href="#" class="service-link">詳しく見る <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card featured reveal-element">
-                    <div class="service-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>キャリアシフトプログラム</h3>
-                    <p>起業や転職など、キャリアの大きな転換点をサポート。あなたの強みを活かしたキャリア戦略を構築し、具体的なアクションプランに落とし込みます。</p>
-                    <div class="service-features">
-                        <span>キャリア分析</span>
-                        <span>ビジョン設計</span>
-                        <span>行動計画作成</span>
-                    </div>
-                    <a href="#" class="service-link">詳しく見る <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card reveal-element">
-                    <div class="service-icon">
-                        <i class="fas fa-seedling"></i>
-                    </div>
-                    <h3>習慣シフトプログラム</h3>
-                    <p>成功を支える日々の習慣を科学的にデザイン。小さな行動の積み重ねが大きな成果につながるシステムを構築します。</p>
-                    <div class="service-features">
-                        <span>習慣分析</span>
-                        <span>環境デザイン</span>
-                        <span>継続サポート</span>
-                    </div>
-                    <a href="#" class="service-link">詳しく見る <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- アプローチセクション -->
-    <section id="approach" class="approach">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag reveal-element">APPROACH</span>
-                <h2 class="reveal-text">科学的根拠に基づく<br>3ステップアプローチ</h2>
-            </div>
-            <div class="approach-steps">
-                <div class="approach-step reveal-element">
-                    <div class="step-number">01</div>
-                    <h3>分析と目標設定</h3>
-                    <p>現状の詳細な分析と明確な目標設定を行います。作業療法の評価技術を用いて、あなたの強み・弱み・環境要因を包括的に把握します。</p>
-                </div>
-                <div class="approach-step reveal-element">
-                    <div class="step-number">02</div>
-                    <h3>戦略と介入</h3>
-                    <p>目標達成のための具体的な戦略を立案し、段階的な行動計画を作成します。習慣形成の科学と行動変容技術を活用した持続可能なアプローチを実施します。</p>
-                </div>
-                <div class="approach-step reveal-element">
-                    <div class="step-number">03</div>
-                    <h3>モニタリングと調整</h3>
-                    <p>定期的な進捗確認と計画の調整を行い、成果を最大化します。データに基づくフィードバックと柔軟な対応で、着実な成長をサポートします。</p>
-                </div>
-            </div>
-            <div class="approach-image reveal-element">
-                <img src="https://source.unsplash.com/random/1200x600/?coaching" alt="コーチングセッション">
-            </div>
-        </div>
-    </section>
-
-    <!-- プログラム料金セクション -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag reveal-element">PRICING</span>
-                <h2 class="reveal-text">プログラム料金</h2>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card reveal-element">
-                    <h3>ベーシックプラン</h3>
-                    <div class="price">¥29,800<span>/月</span></div>
+            <h2 data-animation="fade-in">提供サービス</h2>
+            <div class="services-container">
+                <div class="service-card" data-animation="fade-in">
+                    <h3>パーソナルコーチングセッション</h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> 月2回のオンラインセッション (60分)</li>
-                        <li><i class="fas fa-check"></i> 行動計画作成サポート</li>
-                        <li><i class="fas fa-check"></i> メールサポート</li>
-                        <li><i class="fas fa-check"></i> 月1回の進捗確認</li>
+                        <li>個別の目標設定と行動計画の作成</li>
+                        <li>進捗確認と継続的なフィードバック</li>
+                        <li>メンタルブロックの特定と解消</li>
                     </ul>
-                    <a href="#contact" class="pricing-cta">プランを選択</a>
+                    <p>あなた専用のコーチングセッションで、目標達成に向けた具体的なステップを一緒に作り上げます。</p>
                 </div>
-                <div class="pricing-card featured reveal-element">
-                    <div class="popular-tag">人気</div>
-                    <h3>プレミアムプラン</h3>
-                    <div class="price">¥59,800<span>/月</span></div>
+                
+                <div class="service-card" data-animation="fade-in">
+                    <h3>習慣形成プログラム</h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> 週1回のオンラインセッション (60分)</li>
-                        <li><i class="fas fa-check"></i> パーソナライズド行動計画</li>
-                        <li><i class="fas fa-check"></i> 無制限チャットサポート</li>
-                        <li><i class="fas fa-check"></i> 習慣トラッキングツール提供</li>
-                        <li><i class="fas fa-check"></i> 週次進捗レポート</li>
-                        <li><i class="fas fa-check"></i> 緊急時コンサルティング（月1回）</li>
+                        <li>科学的根拠に基づいた習慣化プロトコル</li>
+                        <li>環境設計と行動トリガーの最適化</li>
+                        <li>自己モニタリングシステムの構築</li>
                     </ul>
-                    <a href="#contact" class="pricing-cta">プランを選択</a>
+                    <p>新しい習慣を確実に定着させるための総合的なプログラムを提供します。</p>
                 </div>
-                <div class="pricing-card reveal-element">
-                    <h3>エグゼクティブプラン</h3>
-                    <div class="price">¥98,000<span>/月</span></div>
+                
+                <div class="service-card" data-animation="fade-in">
+                    <h3>メンタルマネジメント</h3>
                     <ul>
-                        <li><i class="fas fa-check"></i> 週2回のオンラインセッション (60分)</li>
-                        <li><i class="fas fa-check"></i> 完全オーダーメイドプログラム</li>
-                        <li><i class="fas fa-check"></i> 24時間対応チャットサポート</li>
-                        <li><i class="fas fa-check"></i> 高度専門アセスメント</li>
-                        <li><i class="fas fa-check"></i> メンタル・フィジカル統合アプローチ</li>
-                        <li><i class="fas fa-check"></i> 直接訪問サポート (月1回・東京近郊)</li>
+                        <li>ストレス対処法の獲得</li>
+                        <li>セルフコンパッションの育成</li>
+                        <li>レジリエンス強化トレーニング</li>
                     </ul>
-                    <a href="#contact" class="pricing-cta">プランを選択</a>
+                    <p>ストレスや不安に左右されない強靭なメンタルを育て、困難を乗り越える力を養います。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- お客様の声セクション -->
-    <section id="testimonials" class="testimonials">
+    <section class="special-offer" data-animation="fade-in">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag reveal-element">VOICES</span>
-                <h2 class="reveal-text">クライアントの声</h2>
-            </div>
-            <div class="testimonial-slider">
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p>「10年勤めた会社を辞め、独立を決意したものの不安でいっぱいでした。MIND SHIFTのコーチングを受けて、具体的な行動計画が立てられただけでなく、自分の思考パターンを変えることができました。今では自分のビジネスを軌道に乗せ、充実した毎日を送っています。」</p>
-                        <div class="testimonial-author">
-                            <img src="https://source.unsplash.com/random/100x100/?portrait" alt="高橋さん">
-                            <div>
-                                <h4>高橋 明子さん</h4>
-                                <p>Webデザイナー / 34歳</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p>「仕事とプライベートのバランスが崩れ、慢性的な疲労感に悩んでいました。習慣シフトプログラムを通じて、自分の生活パターンを見直し、小さな変化から始めることができました。3ヶ月後には仕事の効率が上がり、趣味の時間も確保できるようになりました。」</p>
-                        <div class="testimonial-author">
-                            <img src="https://source.unsplash.com/random/100x100/?man" alt="佐藤さん">
-                            <div>
-                                <h4>佐藤 健太さん</h4>
-                                <p>マーケティング部長 / 42歳</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-slide">
-                    <div class="testimonial-content">
-                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p>「大学卒業後のキャリアに悩んでいましたが、キャリアシフトプログラムのおかげで自分の強みを再発見できました。コーチの専門的なアドバイスと励ましがなければ、今の仕事には出会えなかったと思います。」</p>
-                        <div class="testimonial-author">
-                            <img src="https://source.unsplash.com/random/100x100/?woman" alt="鈴木さん">
-                            <div>
-                                <h4>鈴木 莉子さん</h4>
-                                <p>新卒入社2年目 / 24歳</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-controls">
-                <button class="prev-btn"><i class="fas fa-arrow-left"></i></button>
-                <div class="testimonial-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <button class="next-btn"><i class="fas fa-arrow-right"></i></button>
-            </div>
+            <h2>期間限定：無料コンサルテーション実施中</h2>
+            <p>現在、サービス品質向上のためのテスト期間として、初回相談を無料でお受けしています。通常のコーチングと同等の質と内容をご体験いただけます。この機会に、あなたの課題や目標について、プロフェッショナルな視点からのアドバイスを受けてみませんか？</p>
+            <a href="#contact" class="pulsing-button">今すぐ予約する</a>
         </div>
     </section>
 
-    <!-- FAQ セクション -->
-    <section class="faq">
+    <section id="profile" class="profile-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag reveal-element">FAQ</span>
-                <h2 class="reveal-text">よくある質問</h2>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item reveal-element">
-                    <div class="faq-question">
-                        <h3>作業療法士のコーチングとは何が違うのですか？</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>作業療法士のコーチングでは、医学的知識と心理学的アプローチを組み合わせ、身体と心の両面からサポートします。特に習慣形成や環境調整の専門性を活かし、持続可能な変化を促します。通常のコーチングよりも科学的なアプローチと実践的なツールを提供できる点が特徴です。</p>
-                    </div>
+            <div class="profile-content">
+                <div class="profile-image" data-animation="fade-in">
+                    <!-- プロフィール画像のプレースホルダー -->
                 </div>
-                <div class="faq-item reveal-element">
-                    <div class="faq-question">
-                        <h3>オンラインでのコーチングは効果がありますか？</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>はい、効果があります。むしろオンラインだからこそ、お互いの時間や場所の制約なく、最適なタイミングでセッションができるメリットがあります。また、デジタルツールを活用した行動記録や習慣トラッキングも容易で、データに基づいたコーチングが可能です。</p>
-                    </div>
-                </div>
-                <div class="faq-item reveal-element">
-                    <div class="faq-question">
-                        <h3>どのくらいの期間でコーチングの効果が出ますか？</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>個人差はありますが、多くのクライアントは3〜6ヶ月のプログラムで具体的な変化を実感されています。特に習慣形成に関しては、科学的研究で約66日で定着すると言われており、3ヶ月程度のコミットメントをおすすめしています。もちろん、目標の大きさや複雑さによって期間は変動します。</p>
-                    </div>
-                </div>
-                <div class="faq-item reveal-element">
-                    <div class="faq-question">
-                        <h3>キャンセルポリシーはどうなっていますか？</h3>
-                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>セッションのキャンセルは48時間前までにご連絡いただければ、振替対応いたします。それ以降のキャンセルは原則として消化扱いとなりますが、緊急事態の場合は個別にご相談ください。月額プランの解約は、契約月の10日までにご連絡いただければ、翌月からの解約が可能です。</p>
-                    </div>
+                <div class="profile-text" data-animation="fade-in">
+                    <h2>安田 翔雲</h2>
+                    <h3>作業療法士 / コーチ</h3>
+                    <p>作業療法士として培った「その人の生活全体を見る視点」と「科学的根拠に基づくアプローチ」を活かし、クライアントの可能性を最大限に引き出すコーチングを提供しています。身体・精神・社会的側面を総合的に捉え、実践的かつ持続可能な変化をサポートします。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- コンタクトセクション -->
-    <section id="contact" class="contact">
+    <section id="faq" class="faq-section">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag reveal-element">CONTACT</span>
-                <h2 class="reveal-text">無料カウンセリングを予約する</h2>
-                <p class="reveal-element">30分のオンラインカウンセリングで、あなたの目標や課題についてお聞かせください。<br>どのようなサポートができるか、具体的にお伝えします。</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-form-container reveal-element">
-                    <form id="contact-form" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">お名前</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">メールアドレス</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">電話番号（任意）</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="interest">興味のあるプログラム</label>
-                            <select id="interest" name="interest">
-                                <option value="">選択してください</option>
-                                <option value="mental">メンタルシフト</option>
-                                <option value="career">キャリアシフト</option>
-                                <option value="habit">習慣シフト</option>
-                                <option value="not-sure">まだ決めていない</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">メッセージ（任意）</label>
-                            <textarea id="message" name="message" rows="4"></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">カウンセリングを予約する</button>
-                    </form>
+            <h2 data-animation="fade-in">よくある質問</h2>
+            <div class="accordion">
+                <div class="accordion-item" data-animation="fade-in">
+                    <div class="question">作業療法士によるコーチングと一般的なコーチングの違いは何ですか？</div>
+                    <div class="answer">作業療法士のコーチングは、心理面だけでなく「作業（日常生活の活動）」を通した変化を重視します。思考と行動の両面からアプローチし、環境調整も含めた総合的な支援を行うことが特徴です。</div>
                 </div>
-                <div class="contact-info reveal-element">
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <h4>メール</h4>
-                            <p>info@mindshift.jp</p>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <h4>対応時間</h4>
-                            <p>平日 10:00-19:00</p>
-                        </div>
-                    </div>
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div>
-                            <h4>所在地</h4>
-                            <p>東京都渋谷区神宮前X-X-X</p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                
+                <div class="accordion-item" data-animation="fade-in">
+                    <div class="question">どのような人に適したサービスですか？</div>
+                    <div class="answer">仕事や生活の中で自分の能力を最大限に発揮したい方、メンタル面の課題と習慣改善を同時に進めたい方、持続可能な変化を望む方に特に適しています。</div>
+                </div>
+                
+                <div class="accordion-item" data-animation="fade-in">
+                    <div class="question">セッションはどのように進行しますか？</div>
+                    <div class="answer">初回は現状分析と目標設定を行い、以降のセッションでは具体的な行動計画の実施と振り返り、調整を繰り返しながら成長を促進します。オンラインと対面の両方に対応しています。</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- フッター -->
-    <footer>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 data-animation="fade-in">お気軽にご連絡ください</h2>
+            <p data-animation="fade-in">無料相談や詳細情報のお問い合わせはこちらから</p>
+            
+            <div class="contact-container">
+                <form class="animated-form" data-animation="fade-in">
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">電話番号（任意）</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">送信する</button>
+                </form>
+                
+                <div class="contact-info" data-animation="fade-in">
+                    <h3>直接のお問い合わせ</h3>
+                    <p>無料相談のご予約や、サービスに関するご質問は下記メールアドレスまでお気軽にお寄せください。24時間以内に返信いたします。</p>
+                    <p class="email-address">Email: Shounot9@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="animated-background">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="index.html">MIND<span>SHIFT</span></a>
-                    <p>作業療法士による科学的コーチング</p>
-                </div>
+                <div class="footer-logo">OT Coaching</div>
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>サービス</h4>
-                        <ul>
-                            <li><a href="#">メンタルシフト</a></li>
-                            <li><a href="#">キャリアシフト</a></li>
-                            <li><a href="#">習慣シフト</a></li>
-                            <li><a href="#">法人向けプログラム</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>サイト情報</h4>
-                        <ul>
-                            <li><a href="#">プライバシーポリシー</a></li>
-                            <li><a href="#">利用規約</a></li>
-                            <li><a href="#">特定商取引法に基づく表記</a></li>
-                            <li><a href="#">会社概要</a></li>
-                        </ul>
-                    </div>
+                    <a href="#home">ホーム</a>
+                    <a href="#services">サービス</a>
+                    <a href="#about">特徴</a>
+                    <a href="#profile">プロフィール</a>
+                    <a href="#contact">お問い合わせ</a>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 MIND SHIFT. All rights reserved.</p>
+                <div class="copyright">© 2025 安田翔雲 作業療法コーチング</div>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
